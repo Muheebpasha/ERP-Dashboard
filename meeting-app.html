@@ -1,0 +1,1141 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <title>Meeting App</title>
+    <link rel="shortcut icon" type="image/x-icon" href="....">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">-->
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/forms/wizard/bs-stepper.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/forms/select/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-extended.min.css">
+    <link rel="stylesheet" type="text/css" href="css/colors.min.css">
+    <link rel="stylesheet" type="text/css" href="css/components.min.css">
+    <link rel="stylesheet" type="text/css" href="css/core/menu/menu-types/horizontal-menu.min.css">
+    <link rel="stylesheet" type="text/css" href="css/plugins/forms/form-validation.css">
+    <link rel="stylesheet" type="text/css" href="css/pages/authentication.css">
+    <link rel="stylesheet" type="text/css" href="css/plugins/forms/form-wizard.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/dt-1.11.3/b-2.0.1/fc-4.0.0/fh-3.2.0/r-2.2.9/sc-2.0.5/sb-1.2.2/sl-1.3.3/datatables.min.css" />
+    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/calendars/fullcalendar.min.css">
+
+</head>
+<!-- END: Head-->
+<!-- BEGIN: Body-->
+<body class="horizontal-layout horizontal-menu 1-column navbar-floating footer-static  " data-open="hover" data-menu="horizontal-menu" data-col="1-column">
+    <!-- BEGIN: Header-->
+    <nav class="header-navbar navbar-expand-lg navbar navbar-fixed align-items-center navbar-shadow">
+
+        <div class="navbar-container d-flex content">
+            <div class="navbar-header">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="index-2.html">
+                            <img src="images/logo.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="nav navbar-nav align-items-center ms-auto">
+
+                <!--<li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-style"><i class="ficon" data-feather="moon"></i></a></li>-->
+                <!--<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                    </ul>
+                </li>-->
+
+
+                <li class="nav-item">
+                    <a href="#">
+                        <span class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Home">
+                            <i class="ficon" data-feather='home'></i>
+                        </span>
+                    </a>
+                </li>
+
+                <li class="nav-item dropdown dropdown-notification">
+                    <a class="nav-link" href="#" data-bs-toggle="dropdown"><span data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Search"><i class="ficon" data-feather="search"></i></span></a>
+                    <div class="dropdown-menu dropdown-menu-media dropdown-menu-end">
+                        <form action="#" class="px-2 py-2">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Button on right" aria-describedby="button-addon2">
+                                <button class="btn btn-outline-primary waves-effect" id="button-addon2" type="button"><i data-feather='search'></i></button>
+                            </div>
+                        </form>
+                    </div>
+
+                </li>
+
+
+
+
+
+
+                <li class="nav-item dropdown dropdown-notification">
+                    <a class="nav-link" href="#" data-bs-toggle="dropdown"><span data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Shortcuts"><i class="ficon" data-feather="external-link"></i></span></a>
+                    <ul class="dropdown-menu dropdown-menu-media">
+                        <li class="dropdown-menu-header">
+                            <div class="dropdown-header d-flex">
+                                <h4 class="notification-title text-primary fw-bolder mb-0 me-auto">FORMS </h4>
+                            </div>
+                        </li>
+                        <li class="scrollable-container media-list">
+
+                            <div class="dropdown-header">
+
+                                <div class="list-item-body">
+                                    <p class="media-heading mb-25"><span class="fw-bolder">CRM</span></p>
+                                    <button type="button" class="btn btn-sm btn-outline-primary waves-effect">Complain Booking</button>
+                                    <button type="button" class="btn btn-sm btn-outline-primary waves-effect">Complain Booking</button>
+                                </div>
+
+                                <div class="list-item-body">
+                                    <p class="media-heading mb-25"><span class="fw-bolder">Operation</span></p>
+                                    <button type="button" class="btn btn-sm btn-outline-primary waves-effect">Complain Booking</button>
+                                    <button type="button" class="btn btn-sm btn-outline-primary waves-effect">Complain Booking</button>
+                                </div>
+
+                            </div>
+                            <hr />
+                        </li>
+
+                        <li class="dropdown-menu-header">
+                            <div class="dropdown-header d-flex">
+                                <h4 class="notification-title text-primary fw-bolder mb-0 me-auto">Reports </h4>
+                            </div>
+                        </li>
+
+                        <li class="scrollable-container media-list pb-2">
+
+                            <div class="dropdown-header">
+
+                                <div class="list-item-body">
+                                    <p class="media-heading mb-25"><span class="fw-bolder">CRM</span></p>
+                                    <button type="button" class="btn btn-sm btn-outline-primary waves-effect">Complain</button>
+                                    <button type="button" class="btn btn-sm btn-outline-primary waves-effect">Complain Booking</button>
+                                </div>
+
+                            </div>
+
+                        </li>
+
+
+                    </ul>
+                </li>
+
+                <li class="nav-item d-none d-lg-block">
+                    <span data-bs-toggle="modal" data-bs-target="#display-module">
+                        <a class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Employee Vaccine Entry">
+                            <img src="images/vaccine.png" class="custom-icon" />
+                        </a>
+                    </span>
+                </li>
+
+                <li class="nav-item d-none d-lg-block">
+                    <span data-bs-toggle="modal" data-bs-target="#display-module">
+                        <a class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Display updated module list">
+                            <i class="ficon" data-feather='layout'></i>
+                        </a>
+                    </span>
+                </li>
+
+
+
+                <li class="nav-item dropdown d-xl-block d-none" style="padding-top: 4px;">
+                    <a class="dropdown-toggle" id="dropdownMenuButton100" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="far fa-building"></i> <span class="selected-branch"> StellarTrack Technologies Pvt. Ltd.</span>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <a class="dropdown-item" href="#">NIS Management Limited</a>
+                        <a class="dropdown-item" href="#">NIS FACILITY MANAGEMENT SERVICES PVT. LTD.</a>
+                        <a class="dropdown-item" href="#">Keertika Academy</a>
+                        <a class="dropdown-item" href="#">StellarTrack Technologies Pvt. Ltd.</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown d-xl-block d-none" style="padding-top: 4px;">
+                    <a class="dropdown-toggle" id="dropdownMenuButton100" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="far fa-calendar-alt"></i> Year: <span class="selected-year"> 20-21</span>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <a class="dropdown-item" href="#">18-19</a>
+                        <a class="dropdown-item" href="#">19-20</a>
+                        <a class="dropdown-item" href="#">20-21</a>
+                    </div>
+                </li>
+
+                <li class="nav-item d-none d-lg-block">
+                    <span data-bs-toggle="modal" data-bs-target="#exampleModal" data-whatever="./compose-mail.html" data-width="modal-lg" data-height="400px">
+                        <a class="nav-link" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Compose">
+                            <img src="images/message.svg" class="custom-icon" />
+                        </a>
+                    </span>
+                </li>
+
+
+                <li class="nav-item dropdown dropdown-notification me-25">
+                    <a class="nav-link" href="#" data-bs-toggle="dropdown"><span data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Mail"><i class="ficon" data-feather="mail"></i><span class="badge rounded-pill bg-primary badge-up cart-item-count">6</span></span></a>
+
+                    <ul class="dropdown-menu dropdown-menu-media dropdown-menu-end">
+                        <li class="dropdown-menu-header">
+                            <div class="dropdown-header d-flex">
+                                <h4 class="notification-title fw-bolder mb-0 me-auto">Index</h4>
+                                <div class="badge rounded-pill badge-light-primary">6 New Mail</div>
+                            </div>
+                        </li>
+                        <li class="scrollable-container media-list">
+                            <a class="d-flex" href="#">
+                                <div class="list-item d-flex align-items-start">
+                                    <div class="me-1">
+                                        <div class="avatar">
+                                            <img src="images/img-dummy.png" alt="avatar" width="32" height="32">
+                                        </div>
+                                    </div>
+                                    <div class="list-item-body flex-grow-1">
+                                        <p class="media-heading"><span class="fw-bolder">Dipayan</span></p>
+                                        <code class="highlighter-rouge">Subject: xxxxx</code>
+
+                                        <p class="text-muted mb-0"><small>Simple CSS Units is a free tool for Web Designers & Front End Developers to simplify the process</small></p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a class="d-flex" href="#">
+                                <div class="list-item d-flex align-items-start">
+                                    <div class="me-1">
+                                        <div class="avatar">
+                                            <img src="images/img-dummy.png" alt="avatar" width="32" height="32">
+                                        </div>
+                                    </div>
+                                    <div class="list-item-body flex-grow-1">
+                                        <p class="media-heading"><span class="fw-bolder">Dipayan</span></p>
+                                        <code class="highlighter-rouge">Subject: xxxxx</code>
+
+                                        <p class="text-muted mb-0"><small>Simple CSS Units is a free tool for Web Designers & Front End Developers to simplify the process</small></p>
+                                    </div>
+                                </div>
+                            </a>
+
+
+                        </li>
+
+                        <li class="dropdown-menu-footer"><a class="btn btn-primary w-100 waves-effect waves-float waves-light" href="#">Open Inbox</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown dropdown-notification me-25 d-none d-lg-block">
+                    <a class="nav-link" href="#" data-bs-toggle="dropdown"><span data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="My Team"><i class="ficon" data-feather="users"></i></span></a>
+                    <ul class="dropdown-menu dropdown-menu-media dropdown-menu-end">
+                        <li class="dropdown-menu-header">
+                            <div class="dropdown-header d-flex">
+                                <h5 class="notification-title me-auto fw-bolder col-form-label">My Team</h5>
+                                <button type="button" class="btn btn-icon btn-sm btn-outline-primary waves-effect" data-bs-toggle="tooltip" data-bs-placement="left" title="" data-bs-original-title="Refresh">
+                                    <i data-feather='refresh-ccw'></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="scrollable-container media-list">
+                            <a class="d-flex" href="#">
+                                <div class="list-item d-flex align-items-start">
+                                    <div class="list-item-body flex-grow-1">
+                                        <p class="media-heading"><span class="fw-bolder"><i class="fas fa-user-times"></i> No Team Members</span></p>
+                                    </div>
+                                </div>
+                            </a>
+
+
+
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown dropdown-user">
+                    <a class="nav-link dropdown-toggle dropdown-user-link" id="dropdown-user" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="user-nav d-sm-flex d-none">
+                            <span class="user-name fw-bolder">Sujit Shaw</span>
+                            <!--<span class="user-status">Admin</span>-->
+                            <ul class="unstyled-list list-inline ps-1 ratings-star">
+
+                                <li class="ratings-list-item"><i data-feather="star" class="filled-star"></i></li>
+                                <li class="ratings-list-item"><i data-feather="star" class="filled-star"></i></li>
+                                <li class="ratings-list-item"><i data-feather="star" class="filled-star"></i></li>
+                                <li class="ratings-list-item"><i data-feather="star" class="filled-star"></i></li>
+                                <li class="ratings-list-item"><i data-feather="star" class="unfilled-star"></i></li>
+                            </ul>
+                        </div>
+                        <span class="avatar bg-secondary">
+                            <span class="avatar-content">SS</span>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-user">
+                        <a class="dropdown-item" href="rating.html"><i class="me-50" data-feather="star"></i> Rating</a>
+                        <a class="dropdown-item" href="page-profile.html"><i class="me-50" data-feather="user"></i> Profile</a>
+                        <!--<a class="dropdown-item d-xl-none" href="app-email.html"><i class="me-50" data-feather='users'></i> My team</a>-->
+                        <a class="dropdown-item" href="app-todo.html"><i class="me-50" data-feather="clock"></i> Time In</a>
+                        <a class="dropdown-item" href="app-todo.html"><i class="me-50" data-feather="clock"></i> Time Out</a>
+                        <div class="dropdown-divider"></div>
+                        <!--<a class="dropdown-item" href="page-account-settings-account.html"><i class="me-50" data-feather="mail"></i> Mail Configuration</a>-->
+                        <a class="dropdown-item" href="auth-login-cover.html"><i class="me-50" data-feather="power"></i> Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- END: Header-->
+    <!-- BEGIN: Content-->
+    <div class="app-content content ">
+        <div class="content-overlay"></div>
+        <div class="content-wrapper container-xxl p-0">
+
+
+            <div class="content-body">
+                <div class="row match-height">
+
+
+                    <div class="col-md-8">
+
+                        <div class="col-lg-12" id="status-view">
+                            <div class="card mb-0 border-radious-bottom-0">
+                                <div class="card-header">
+                                    <h4 class="card-title">Meetings</h4>
+                                    <div class="float-end">
+                                        <button class="btn btn-outline-primary btn-xs mb-0" type="button" data-bs-toggle="modal" data-bs-target="#modify">
+                                            <i data-feather='plus'></i> Add Meeting
+                                        </button>
+                                    </div>
+
+                                </div>
+                                <div class="card-header">
+
+                                    <ul class="nav nav-pills tab-area mb-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="home-tab" data-bs-toggle="pill" href="#tab1" aria-expanded="true"> Today</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="profile-tab" data-bs-toggle="pill" href="#tab2" aria-expanded="false">Tommorow</a>
+                                        </li>
+
+                                        <li class="nav-item" data-bs-toggle="modal" data-bs-target="#manual_date">
+                                            <a class="nav-link" id="about-tab" data-bs-toggle="pill" href="#tab3" aria-expanded="false">Date</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="about-tab" data-bs-toggle="pill" href="#tab4" aria-expanded="false" onclick="initCalendar()"><i data-feather='calendar'></i> Calender</a>
+                                        </li>
+                                    </ul>
+
+                                  
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="modal fade text-start"
+                         id="manual_date"
+                         tabindex="-1"
+                         aria-labelledby="myModalLabel1"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-xs">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="myModalLabel1">Select Date</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+
+
+
+                                        <div class="mb-1 col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <label class="form-label">Date</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="input-group input-group-merge">
+                                                        <span class="input-group-text">
+                                                            <i class="far fa-calendar-alt"></i>
+                                                        </span>
+                                                        <input type="text" class="form_datetime form-control form-control-sm">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="text-end">
+                                            <button class="btn btn-sm btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#manual_date" data-bs-dismiss="modal">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="tab1" aria-labelledby="home-tab" aria-expanded="true">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="card border-radious-top-0">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="content-header">
+                                                        <div class="row">
+
+                                                            <div class="col-md-12">
+                                                                <label class="number-text fw-bold text-primary"><i class="fas fa-calendar-week"></i> Monday, Feb 7</label>
+                                                            </div>
+
+
+                                                            <div class="table-responsive mt-1">
+                                                                <table class="table table-striped table-hover cursor table-bordered font-small-3 text-color1">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width:8%" class="text-end">10&nbsp;AM</td>
+                                                                            <td data-bs-toggle="modal" data-bs-target="#meeting_details"><span class="badge bg-primary">Subject....</span> & Members</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width:8%" class="text-end">11&nbsp;AM</td>
+                                                                            <td>No Meeting</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width:8%" class="text-end">12&nbsp;PM</td>
+                                                                            <td>No Meeting</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width:8%" class="text-end">1&nbsp;PM</td>
+                                                                            <td><span class="badge bg-primary">Subject....</span> & Members</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width:8%" class="text-end">2&nbsp;PM</td>
+                                                                            <td>No Meeting</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width:8%" class="text-end">3&nbsp;PM</td>
+                                                                            <td><span class="badge bg-primary">Subject....</span> & Members</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="tab-pane" id="tab2" role="tabpanel" aria-labelledby="profile-tab" aria-expanded="false">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="card border-radious-top-0">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="content-header">
+                                                        <div class="row">
+
+                                                            <div class="col-md-12">
+                                                                <label class="number-text fw-bold text-primary"><i class="fas fa-calendar-week"></i> Tuesday, Feb 8</label>
+                                                            </div>
+
+
+                                                            <div class="table-responsive mt-1">
+                                                                <table class="table table-striped table-hover cursor table-bordered font-small-3 text-color1">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width:8%" class="text-end">10&nbsp;AM</td>
+                                                                            <td>No Meeting</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width:8%" class="text-end">11&nbsp;AM</td>
+                                                                            <td>No Meeting</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width:8%" class="text-end">12&nbsp;PM</td>
+                                                                            <td><span class="badge bg-primary">Subject....</span> & Members</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width:8%" class="text-end">1&nbsp;PM</td>
+                                                                            <td><span class="badge bg-primary">Subject....</span> & Members</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width:8%" class="text-end">2&nbsp;PM</td>
+                                                                            <td><span class="badge bg-primary">Subject....</span> & Members</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width:8%" class="text-end">3&nbsp;PM</td>
+                                                                            <td>Subject & Members</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="tab3" role="tabpanel" aria-labelledby="about-tab" aria-expanded="false">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="card border-radious-top-0">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="content-header">
+                                                        <div class="row">
+
+                                                            <div class="col-md-12">
+                                                                <label class="number-text fw-bold text-primary"><i class="fas fa-calendar-week"></i> Monday, Feb 7</label>
+                                                            </div>
+
+
+                                                            <div class="table-responsive mt-1">
+                                                                <table class="table table-striped table-hover cursor table-bordered font-small-3 text-color1">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width:8%" class="text-end">10&nbsp;AM</td>
+                                                                            <td>No Meeting</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width:8%" class="text-end">11&nbsp;AM</td>
+                                                                            <td><span class="badge bg-primary">Subject....</span> & Members</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width:8%" class="text-end">12&nbsp;PM</td>
+                                                                            <td>No Meeting</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width:8%" class="text-end">1&nbsp;PM</td>
+                                                                            <td><span class="badge bg-primary">Subject....</span> & Members</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width:8%" class="text-end">2&nbsp;PM</td>
+                                                                            <td><span class="badge bg-primary">Subject....</span> & Members</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width:8%" class="text-end">3&nbsp;PM</td>
+                                                                            <td>No Meeting</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="width:8%" class="text-end">4&nbsp;PM</td>
+                                                                            <td><span class="badge bg-primary">Subject....</span> & Members</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="tab4" role="tabpanel" aria-labelledby="about-tab" aria-expanded="false">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="card border-radious-top-0">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div id="calendar"></div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-4 d-xl-block d-none">
+                        <div class="card bg-color1-light">
+                            <div class="card-header border-none">
+                                <h4 class="card-title">Meeting Details</h4>
+                                <div class="float-end">
+                                    <span data-bs-toggle="modal" data-bs-target="#modify">
+                                        <a class="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Modify Detail">
+                                            <i class="far fa-edit font-small-4"></i>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+
+
+                                <div class="card-information">
+
+
+
+
+                                    <label class="form-label text-primary">
+                                        <span class="fw-bold ">Date:</span>
+                                        <span>xxxxxxxxx</span>
+                                    </label>
+                                    &nbsp;
+                                    <label class="form-label text-primary">
+                                        <span class="fw-bold ">Date of the meeting:</span>
+                                        <span>xxxxxxxxx</span>
+                                    </label>
+
+                                    <br />
+                                    <label class="form-label text-primary">
+                                        <span class="fw-bold ">Time From:</span>
+                                        <span>xxxxxxxxx</span>
+                                    </label>
+                                    &nbsp;
+                                    <label class="form-label text-primary">
+                                        <span class="fw-bold ">Time To:</span>
+                                        <span>xxxxxxxxx</span>
+                                    </label>
+                                    <br />
+                                    <label class="form-label text-primary">
+                                        <span class="fw-bold ">Type of meeting:</span>
+                                        <span>xxxxxxxxx</span>
+                                    </label>
+                                    <br />
+                                    <label class="form-label text-primary">
+                                        <span class="fw-bold ">Conducted by:</span>
+                                        <span>xxxxxxxxx</span>
+                                    </label>
+
+                                    <div class="row">
+
+
+                                        <div class="col-md-12">
+                                            <h6 class="fw-bold border-bottom mb-25">Members</h6>
+                                        </div>
+
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-bordered table-sm font-small-2 text-color1">
+                                                <thead class="table-dark">
+                                                    <tr class="table-info text-color2">
+                                                        <th>Employee</th>
+                                                        <th>Employee&nbsp;Name&nbsp;(Employee&nbsp;ID)(Departmnet)</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>xxxxxxxxxx</td>
+                                                        <td>xxxxxxx xxxx</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                    </div>
+
+
+                                    <br />
+
+                                    <label class="form-label">
+                                        <span class="fw-bold">Location:</span>
+                                        <span>xxxxxxx</span>
+                                    </label>
+
+                                    <br />
+
+                                    <label class="form-label">
+                                        <span class="fw-bold">Subject:</span>
+                                        <span>xxxxxxx</span>
+                                    </label>
+                                    <br />
+
+                                    <label class="form-label">
+                                        <span class="fw-bold">Detail of meeting:</span>
+                                        <span>xxxxxxx</span>
+                                    </label>
+
+
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="modal fade text-start"
+                         id="meeting_details"
+                         tabindex="-1"
+                         aria-labelledby="myModalLabel1"
+                         aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="side-over float-end">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                
+                                    <div class="card bg-color1-light mb-0">
+                                        <div class="card-header border-none">
+                                            <h4 class="card-title">Meeting Details</h4>
+                                            <div class="float-end">
+                                                <span data-bs-toggle="modal" data-bs-target="#modify">
+                                                    <a class="" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Modify Detail">
+                                                        <i class="far fa-edit font-small-4"></i>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+
+
+                                            <div class="card-information">
+
+
+
+
+                                                <label class="form-label text-primary">
+                                                    <span class="fw-bold ">Date:</span>
+                                                    <span>xxxxxxxxx</span>
+                                                </label>
+                                                &nbsp;
+                                                <label class="form-label text-primary">
+                                                    <span class="fw-bold ">Date of the meeting:</span>
+                                                    <span>xxxxxxxxx</span>
+                                                </label>
+
+                                                <br />
+                                                <label class="form-label text-primary">
+                                                    <span class="fw-bold ">Time From:</span>
+                                                    <span>xxxxxxxxx</span>
+                                                </label>
+                                                &nbsp;
+                                                <label class="form-label text-primary">
+                                                    <span class="fw-bold ">Time To:</span>
+                                                    <span>xxxxxxxxx</span>
+                                                </label>
+                                                <br />
+                                                <label class="form-label text-primary">
+                                                    <span class="fw-bold ">Type of meeting:</span>
+                                                    <span>xxxxxxxxx</span>
+                                                </label>
+                                                <br />
+                                                <label class="form-label text-primary">
+                                                    <span class="fw-bold ">Conducted by:</span>
+                                                    <span>xxxxxxxxx</span>
+                                                </label>
+
+                                                <div class="row">
+
+
+                                                    <div class="col-md-12">
+                                                        <h6 class="fw-bold border-bottom mb-25">Members</h6>
+                                                    </div>
+
+                                                    <div class="table-responsive">
+                                                        <table class="table table-striped table-bordered table-sm font-small-2 text-color1">
+                                                            <thead class="table-dark">
+                                                                <tr class="table-info text-color2">
+                                                                    <th>Employee</th>
+                                                                    <th>Employee&nbsp;Name&nbsp;(Employee&nbsp;ID)(Departmnet)</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>xxxxxxxxxx</td>
+                                                                    <td>xxxxxxx xxxx</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+
+                                                </div>
+
+
+                                                <br />
+
+                                                <label class="form-label">
+                                                    <span class="fw-bold">Location:</span>
+                                                    <span>xxxxxxx</span>
+                                                </label>
+
+                                                <br />
+
+                                                <label class="form-label">
+                                                    <span class="fw-bold">Subject:</span>
+                                                    <span>xxxxxxx</span>
+                                                </label>
+                                                <br />
+
+                                                <label class="form-label">
+                                                    <span class="fw-bold">Detail of meeting:</span>
+                                                    <span>xxxxxxx</span>
+                                                </label>
+
+
+
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="modal fade text-start"
+                         id="modify"
+                         tabindex="-1"
+                         aria-labelledby="myModalLabel1"
+                         aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="myModalLabel1">Meeting Details Modify</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+
+
+
+                                        <div class="mb-1 col-md-6">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <label class="form-label">Date</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="input-group input-group-merge">
+                                                        <span class="input-group-text">
+                                                            <i class="far fa-calendar-alt"></i>
+                                                        </span>
+                                                        <input type="text" class="form_datetime form-control form-control-sm">
+                                                        <!--<input type="text" class="form_time form-control form-control-sm">-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-1 col-md-6">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <label class="form-label">Date of the meeting</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input type="text" class="form-control form-control-sm" />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-1 col-md-6">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <label class="form-label">Time From</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="input-group input-group-merge">
+                                                        <span class="input-group-text">
+                                                            <i class="far fa-clock"></i>
+                                                        </span>
+                                                        <input type="text" class="form_time form-control form-control-sm">
+                                                        <!--<input type="text" class="form_time form-control form-control-sm">-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-1 col-md-6">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <label class="form-label">Time To</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="input-group input-group-merge">
+                                                        <span class="input-group-text">
+                                                            <i class="far fa-clock"></i>
+                                                        </span>
+                                                        <input type="text" class="form_time form-control form-control-sm">
+                                                        <!--<input type="text" class="form_time form-control form-control-sm">-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="mb-1 col-md-6">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <label class="form-label">Types of meeting</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <select class="form-select form-select-sm">
+                                                        <option>General</option>
+                                                        <option>Accounts</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-1 col-md-6">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <label class="form-label">Conducted by</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input type="text" class="form-control form-control-sm" />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-1 col-md-6">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <label class="form-label">Location</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="input-group input-group-merge">
+                                                        <span class="input-group-text">
+                                                            <i data-feather='map-pin'></i>
+                                                        </span>
+                                                        <input type="text" class="form-control form-control-sm">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-1 col-md-6">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <label class="form-label">Subject</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <input type="text" class="form-control form-control-sm" />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-1 col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <label class="form-label">Detail of meeting</label>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <textarea class="form-control form-control-sm" rows="1"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="text-end">
+                                            <button class="btn btn-sm btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modify" data-bs-dismiss="modal">Update</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- END: Content-->
+
+
+    <div class="nb-form d-none d-lg-block">
+        <p class="title">Today's Birthdays (2) <span class="float-end"><i class="fas fa-birthday-cake"></i></span></p>
+        <div class="listcontentaction">
+            <ul class="list-group">
+                <!--<li class="list-group-item text-muted">
+                    <div class="media-body">
+                        <p style="font-size:12px;font-weight:bold" class="media-heading text-third">ADMIN</p>
+                        <p style="font-size:11px" class="text-muted">ID : <span>0400000000</span></p>
+                        <p style="font-size:11px" class="text-muted">DOB : <span>25 Oct</span></p>
+                    </div>
+                </li>
+                <li class="list-group-item text-muted">
+                    <div class="media-body">
+                        <p style="font-size:12px;font-weight:bold" class="media-heading text-third">ADMIN</p>
+                        <p style="font-size:11px" class="text-muted">ID : <span>0400000000</span></p>
+                        <p style="font-size:11px" class="text-muted">DOB : <span>25 Oct</span></p>
+                    </div>
+                </li>-->
+
+            </ul>
+        </div>
+    </div>
+    <div class="nb-form2 d-none d-lg-block">
+        <p class="title">This Month's & Upcoming Events (0) <span class="float-end"><i data-feather='calendar'></i></span></p>
+        <div class="listcontentaction">
+            <ul class="list-group">
+                <li class="list-group-item text-muted">
+                    <h6 class="list-group-item-text text-justify" style="">No Employee corners found.</h6>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="nb-form2 nb-form3-right d-none d-lg-block">
+        <p class="title">Employee Corner <span class="float-end"><i data-feather='calendar'></i></span></p>
+        <div class="listcontentaction">
+            <ul class="list-group">
+                <li class="list-group-item text-muted">
+                    <h6 class="list-group-item-text text-justify" style="">No Employee corners found.</h6>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light">
+        <p class="clearfix mb-0"><span class="float-md-start d-block d-md-inline-block mt-25">&copy; 2021<a class="ms-25" href="http://stellartrack.in/" target="_blank">StellarTrack Technologies Pvt. Ltd.</a><span class="d-none d-sm-inline-block"> All rights Reserved</span></span></p>
+    </footer>
+    <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
+    <!-- END: Footer-->
+
+
+
+
+
+
+
+    <div class="modal fade text-start"
+         id="display-module"
+         tabindex="-1"
+         aria-labelledby="myModalLabel17"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel17">Display updated module list</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    I love tart cookie cupcake. I love chupa chups biscuit. I love marshmallow apple pie wafer
+                    liquorice. Marshmallow cotton candy chocolate. Apple pie muffin tart. Marshmallow halvah pie
+                    marzipan lemon drops jujubes. Macaroon sugar plum cake icing toffee.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="modal fade text-start"
+         id="exampleModal"
+         tabindex="-1"
+         aria-labelledby="myModalLabel1"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!--<div class="modal-header">
+                    <h4 class="modal-title">Pending List</h4>
+
+                </div>-->
+                <div class="side-over float-end">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <form>
+                    <iframe id="frame" src="" height="530px;" width="100%" frameborder="0" style="border-radius: 2px;"></iframe>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="vendors/js/vendors.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.js"></script>
+    <script src="vendors/js/ui/jquery.sticky.js"></script>
+    <script src="vendors/js/forms/wizard/bs-stepper.min.js"></script>
+    <script src="vendors/js/forms/select/select2.full.min.js"></script>
+    <script src="vendors/js/forms/validation/jquery.validate.min.js"></script>
+    <script src="js/core/app-menu.min.js"></script>
+    <script src="js/core/app.min.js"></script>
+    <script src="js/scripts/customizer.min.js"></script>
+    <script src="js/scripts/pages/auth-login.js"></script>
+    <script src="js/scripts/forms/form-wizard.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.11.3/b-2.0.1/fc-4.0.0/fh-3.2.0/r-2.2.9/sc-2.0.5/sb-1.2.2/sl-1.3.3/datatables.min.js"></script>
+    <script src="vendors/js/calendar/fullcalendar.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#table-list').DataTable();
+
+        });
+        function initCalendar() {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                height: 430,
+                selectable: true
+            });
+            calendar.render();
+        }
+    </script>
+
+
+
+
+
+
+
+
+</body>
+</html>
